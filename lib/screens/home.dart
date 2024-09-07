@@ -32,11 +32,11 @@ class _HomePageState extends State<HomePage> {
     },
     {
       'icon':Icons.cable_outlined,
-      'category':'Gynecology',
+      'category':'Immunology',
     },
     {
       'icon':Icons.table_bar_outlined,
-      'category':'Dental',
+      'category':'Hematology',
     },
 
   ];
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
     Config().init(context);
     return  Scaffold(
       body: Padding(
-          padding: EdgeInsets.symmetric(
+          padding: const EdgeInsets.symmetric(
         horizontal: 15,
         vertical: 15,
           ),
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text('Abdulrasaq',
@@ -64,6 +64,7 @@ class _HomePageState extends State<HomePage> {
                         fontWeight: FontWeight.bold,
                       ),
                       ),
+                      // 1
                       SizedBox(
                         child: CircleAvatar(
                           radius: 30,
@@ -72,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                       )
                     ],
                   ),
-                  Config.spaceMedium,
+                  Config.spaceSmall,
 
                   const Text('Category',
                     style: TextStyle(
@@ -125,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                   const AppointmentCard(),
                   Config.spaceMedium,
                   const Text(
-                    'Top Specialists',
+                    'Top Tests',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,

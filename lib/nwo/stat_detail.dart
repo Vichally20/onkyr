@@ -34,22 +34,22 @@ class _StatDetailState extends State<StatDetail> {
           ),
         ],
       ),
-      body:   SafeArea(
+      body: SafeArea(
         child: Column(
-          children:  [
-             AboutStat(),
-             DetailBody(),
-             Spacer(),
-            Padding( padding:  EdgeInsets.all(10),
-            child: Button(
-              width: double.infinity,
-              title: 'Book Appointment',
-              disable: false,
-              onpressed: (){
-                Navigator.of(context).pushNamed('booking');
-              },
-            ),
-              
+          children: [
+            AboutStat(),
+            DetailBody(),
+            Spacer(),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: Button(
+                width: double.infinity,
+                title: 'Book Appointment',
+                disable: false,
+                onpressed: () {
+                  Navigator.of(context).pushNamed('booking');
+                },
+              ),
             ),
           ],
         ),
@@ -70,12 +70,12 @@ class AboutStat extends StatelessWidget {
         children: [
           const CircleAvatar(
             radius: 65,
-            backgroundImage: AssetImage('asset/profile23.jpg'),
+            backgroundImage: AssetImage('asset/test1.png'),
             backgroundColor: Colors.white,
           ),
           Config.spaceMedium,
           const Text(
-            'Dr Abdulrasaq',
+            'Complete Blood Count Testing',
             style: TextStyle(
               fontSize: 24,
               color: Config.primaryColor,
@@ -86,7 +86,7 @@ class AboutStat extends StatelessWidget {
           SizedBox(
             width: Config.widthSize * 0.75,
             child: const Text(
-              "HHBMS (loreum ipsium avraeit segall oess oruth)",
+              "(Blood test analysis and evaluation)",
               style:
                   TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 15),
               softWrap: true,
@@ -97,7 +97,7 @@ class AboutStat extends StatelessWidget {
           SizedBox(
             width: Config.widthSize * 0.75,
             child: const Text(
-              "Just one big place",
+              "Hematology",
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 17,
@@ -130,18 +130,21 @@ class DetailBody extends StatelessWidget {
           const Text(
             'Lab Test Info',
             style: TextStyle(
-                color: Config.primaryColor, fontWeight: FontWeight.w600, fontSize: 18),
+                color: Config.primaryColor,
+                fontWeight: FontWeight.w600,
+                fontSize: 18),
           ),
-          Config.spaceSmall, 
-          const Text('lets just say you have to do a number of things to get this done and they include the following: do not eat before you come for the test and also do not drink water',
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 15,
-            fontWeight: FontWeight.w500,
-            height: 1.5,
-          ),
-          softWrap: true,
-          textAlign: TextAlign.justify,
+          Config.spaceSmall,
+          const Text(
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 15,
+              fontWeight: FontWeight.w500,
+              height: 1.5,
+            ),
+            softWrap: true,
+            textAlign: TextAlign.justify,
           ),
           // Add your widgets here
         ],
@@ -159,17 +162,17 @@ class StatInfo extends StatelessWidget {
       children: [
         InfoCard(
           label: 'Lab Test',
-          value: 'EDM +',
+          value: 'CBC +',
         ),
         SizedBox(width: 15),
         InfoCard(
           label: 'Price',
-          value: 'N2000',
+          value: 'N5000',
         ),
         SizedBox(width: 15),
         InfoCard(
           label: 'Duration',
-          value: '1 days',
+          value: '2 days',
         ),
       ],
     );

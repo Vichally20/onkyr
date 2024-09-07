@@ -34,15 +34,15 @@ class _AppointmentCardState extends State<AppointmentCard> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
                       Text(
-                        'DR Abdulrasaq',
+                        'Abdulrasaq',
                         style: TextStyle(color: Colors.white),
                       ),
                       SizedBox(
                         height: 2,
                       ),
                       Text(
-                        'Dental',
-                        style: TextStyle(color: Colors.black),
+                        'Xray Test',
+                        style: TextStyle(color: Colors.white),
                       ),
                     ],
                   ),
@@ -122,7 +122,7 @@ class ScheduleCard extends StatelessWidget {
           Icon(
             Icons.access_alarm_outlined,
             color: Colors.white,
-            size: 17,
+            size: 15,
           ),
           SizedBox(
             width: 5,
